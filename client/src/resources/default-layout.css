@@ -6,6 +6,8 @@
   padding: 20px;
   border-bottom-right-radius: 25px;
   border-bottom-left-radius: 25px;
+  display: flex;
+  justify-content: space-between;
 }
 .logo{
   font-size: 30px;
