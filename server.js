@@ -1,6 +1,7 @@
 // Import required modules
 const express = require('express');
 const mongoose = require('mongoose');
+const dbConnect = require('./dbConnect')
 
 // Initialize Express app
 const app = express();
