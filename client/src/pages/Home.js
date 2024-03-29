@@ -1,14 +1,15 @@
 import React from 'react'
 import DefaultLayout from '../components/DefaultLayout'
-
-function Home() {
+// import { Button } from "antd";
+function home() {
   return (
-    <div>
+    // Home component representing the home page
       <DefaultLayout>
-        <h1>This is Home Page</h1>
+
+          <h1>This is the Home Page</h1>
+          {/* <Button type="primary">Primary Button</Button> */}
       </DefaultLayout>
-    </div>
   )
 }
 
-export default Home
+export default home
