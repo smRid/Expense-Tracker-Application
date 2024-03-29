@@ -5,6 +5,8 @@ import {Button} from 'antd'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Home from './pages/Home';
 import Test from './pages/Test';
+import Registration from './pages/Registration';
+import Login from './pages/Login';
 
 // App component defining routes for different pages
 function App() {
@@ -19,6 +21,8 @@ function App() {
 
                     <Route path='/' element={<Home/>}/>
                     <Route path='/test' element={<Test/>}/>
+                    <Route path='/registration' element={<Registration/>}/>
+                    <Route path='/login' element={<Login/>}/>
 
                 </Routes>
 
