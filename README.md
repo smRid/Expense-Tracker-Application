@@ -33,5 +33,4 @@ Expense Tracker Application aims to provide a convenient and efficient way for i
 
 ## Software Architecture
 
-<a href="https://ibb.co/K736MZg"><img src="https://i.ibb.co/0ZdqgNL/Screenshot-110.png" alt="Screenshot-110" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />
-
+<a href="https://ibb.co/ygXBbhF"><img src="https://i.ibb.co/nQb853M/Picture121.png" alt="Picture121" border="0"></a>
