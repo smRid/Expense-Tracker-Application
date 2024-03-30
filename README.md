@@ -9,7 +9,6 @@ Expense Tracker Application aims to provide a convenient and efficient way for i
 • React <br>
 • Redux <br>
 • Bootstrap <br>
-• Ant Design <br>
 • Axios <br>
 • Node <br>
 • Express <br>
