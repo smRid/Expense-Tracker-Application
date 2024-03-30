@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-// import 'antd/dist/antd.css'
+// import "antd/dist/antd.min.css";
 import {Button} from 'antd'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Home from './pages/Home';
@@ -13,8 +13,6 @@ function App() {
   return (
 
     <div className="App">
-          {/* <h1>Hello World!</h1>
-          <Button type="primary">Primary Button</Button> */}
           <BrowserRouter>
 
                 <Routes>
