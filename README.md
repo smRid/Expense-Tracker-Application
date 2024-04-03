@@ -11,8 +11,7 @@ Expense Tracker Application aims to provide a convenient and efficient way for i
 • Bootstrap <br>
 • Axios <br>
 • Node <br>
-• Express <br>
-• MongoDB <br>
+
 <br>
 
 
