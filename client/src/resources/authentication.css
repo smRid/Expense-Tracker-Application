@@ -7,23 +7,24 @@
 }
 
 .lottie{
-    height: 400px;
+    height: 700px;
 }
 
 .registration input{
-    background-color: transparent;
+    background-color: transparent !important;
     border: none;
     border-bottom: 1px solid rgba(137, 137, 137, 0.696);
-    color: rgba(225, 225, 225, 0.536);
+    color: rgb(0, 0, 0);
 }
 
 input:focus{
     outline: none !important;
     box-shadow: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.784) !important;
 }
 
 label, a{
-    color: rgba(225, 225, 225, 0.536);
+    color: rgba(255, 255, 255, 0.514);
 }
 
 .registration h1{
@@ -45,8 +46,9 @@ label, a{
 }
 
 .Login input{
-    background-color: transparent;
+    background-color: transparent !important;
     border: none;
     border-bottom: 1px solid rgba(137, 137, 137, 0.696);
-    color: rgba(225, 225, 225, 0.536);
+    color: rgb(0, 0, 0);
 }
+
