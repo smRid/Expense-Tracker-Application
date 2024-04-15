@@ -4,3 +4,10 @@ body {
   margin: 0;
   font-family: "DM Sans", sans-serif !important;
 }
+
+.primary{
+  background-color: #161C51;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+}
