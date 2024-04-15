@@ -1,4 +1,5 @@
 import React from 'react'
+
 import '../resources/default-layout.css'
 // DefaultLayout component defining the layout structure
 function DefaultLayout(props) {
