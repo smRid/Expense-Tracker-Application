@@ -1,7 +1,7 @@
-import React from 'react'
 import { Form, Input } from 'antd';
 import { Link } from 'react-router-dom'; 
 import DefaultLayout from '../components/DefaultLayout'
+import React from 'react'
 
 function Registration() {
   return (
