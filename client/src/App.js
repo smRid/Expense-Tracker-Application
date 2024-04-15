@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-// import "antd/dist/antd.min.css";
+import 'antd/dist/reset.css';
 import {Button} from 'antd'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Home from './pages/Home';
