@@ -9,7 +9,7 @@ function Login() {
     const navigate = useNavigate();
     const onFinish = async (values) => {
         try {
-            const response = await axios.post('/api/login', values);
+            const response = await axios.post('/api/users/login', values);
             localStorage.setItem('expense-tracker-user', JSON.stringify(response));
             message.success('Login successfull.');
             navigate('/');
@@ -26,10 +26,7 @@ function Login() {
                     <Form layout='vertical' onFinish={onFinish}>
                         <h1>Expense Tracker Application Login</h1>
                         <hr />
-                        <Form.Item label='Name' name='name'>
-                            <Input />
-                        </Form.Item>
-
+                    
                         <Form.Item label='Email' name='email'>
                             <Input />
                         </Form.Item>
