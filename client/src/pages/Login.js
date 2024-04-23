@@ -1,22 +1,12 @@
-import { Form, message } from 'antd'
+import { Form } from 'antd'
 import Input from 'antd/lib/input/Input'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import React from 'react'
 import '../resources/authentication.css'
-import axios from 'axios'
 
 function Login() {
-    const navigate = useNavigate()
-    const onFinish = async(values) => {
-        try {
-            const response = await axios.post('/api/login', values)
-            localStorage.setItem('Expense-tracker-user', JSON.stringify(response))
-            message.success('Login successful')
-            navigate('')
-        } catch (error) {
-            message.error('Login failed')
-            
-        }
+    const onFinish = (values) => {
+        console.log(values)
     }
 
     return (

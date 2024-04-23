@@ -7,7 +7,7 @@
     background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
 }
 .lottie{
-    height: 400px;
+    height: 700px;
 }
 
 .register input{
@@ -20,25 +20,16 @@
 input:focus{
     outline: none !important;
     box-shadow: none !important;
-}
-
-label, a{
-    color: rgba(255,255,255,0.536) !important;
-}
-
-.register h1{
-    font-size: 25px;
-    color: white;
-}
-
-input:focus{
-    outline: none !important;
-    box-shadow: none !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.784) !important;
 }
 
 label, a{
     color: rgba(255, 255, 255, 0.514);
+}
+
+.register h1{
+    font-size: 25px;
+    color: white;
 }
 
 /* for login */
