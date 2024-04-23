@@ -1,6 +1,6 @@
 /* for register */
 .register{
-    height: 100vh;
+    height:100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,10 +11,10 @@
 }
 
 .register input{
-    background-color: transparent;
+    background-color: transparent !important;
     border: none;
-    border-bottom: 1px solid rgba(137,137,137,0.696);
-    color: rgb(255, 255, 255, 0.568) ;
+    border-bottom: 1px solid rgba(137, 137, 137, 0.696);
+    color: rgb(0, 0, 0);
 }
 
 input:focus{
@@ -31,9 +31,19 @@ label, a{
     color: white;
 }
 
+input:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.784) !important;
+}
+
+label, a{
+    color: rgba(255, 255, 255, 0.514);
+}
+
 /* for login */
 .login{
-    height: 100vh;
+    height:100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,10 +51,10 @@ label, a{
 }
 
 .login input{
-    background-color: transparent;
+    background-color: transparent !important;
     border: none;
-    border-bottom: 1px solid rgba(137,137,137,0.696);
-    color: rgb(255, 255, 255, 0.568) ;
+    border-bottom: 1px solid rgba(137, 137, 137, 0.696);
+    color: rgb(0, 0, 0);
 }
 
 .login h1{
