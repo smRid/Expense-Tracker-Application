@@ -1,13 +1,22 @@
-import { Form } from 'antd'
-import Input from 'antd/lib/input/Input'
-import { Link } from 'react-router-dom';
-import React from 'react'
-import '../resources/authentication.css'
+import { Form, message } from 'antd';
+import Input from 'antd/lib/input/Input';
+import { Link, useNavigate } from 'react-router-dom';
+import React from 'react';
+import '../resources/authentication.css';
+import axios from 'axios';
 
 function Login() {
-    const onFinish = (values) => {
-        console.log(values)
-    }
+    const navigate = useNavigate();
+    const onFinish = async (values) => {
+        try {
+            const response = await axios.post('/api/login', values);
+            localStorage.setItem('expense-tracker-user', JSON.stringify(response));
+            message.success('Login successfull.');
+            navigate('/');
+        } catch (error) {
+            message.error('Login failed.');
+        }
+    };
 
     return (
         <div className="login">
@@ -41,7 +50,7 @@ function Login() {
                         <dotlottie-player src="https://lottie.host/d2f99c83-b99b-4ddc-8d49-5f554a920941/el4MFtgs2L.json" background="transparent" speed="1" loop autoplay></dotlottie-player>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     )
