@@ -1,54 +1,53 @@
-.registration{
-    height:100vh;
+/* for register */
+.register{
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
 }
-
 .lottie{
-    height: 700px;
+    height: 400px;
 }
 
-.registration input{
-    background-color: transparent !important;
+.register input{
+    background-color: transparent;
     border: none;
-    border-bottom: 1px solid rgba(137, 137, 137, 0.696);
-    color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgba(137,137,137,0.696);
+    color: rgb(255, 255, 255, 0.568) ;
 }
 
 input:focus{
     outline: none !important;
     box-shadow: none !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.784) !important;
 }
 
 label, a{
-    color: rgba(255, 255, 255, 0.514);
+    color: rgba(255,255,255,0.536) !important;
 }
 
-.registration h1{
+.register h1{
     font-size: 25px;
     color: white;
 }
 
-.Login h1{
-    font-size: 25px;
-    color: white;
-}
-
-.Login{
-    height:100vh;
+/* for login */
+.login{
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
 }
 
-.Login input{
-    background-color: transparent !important;
+.login input{
+    background-color: transparent;
     border: none;
-    border-bottom: 1px solid rgba(137, 137, 137, 0.696);
-    color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgba(137,137,137,0.696);
+    color: rgb(255, 255, 255, 0.568) ;
 }
 
+.login h1{
+    font-size: 25px;
+    color: white;
+}

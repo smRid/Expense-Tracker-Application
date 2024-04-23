@@ -1,11 +1,14 @@
 // Import required modules
 const express = require('express');
-const mongoose = require('mongoose');
+
 const dbConnect = require('./dbConnect')
+// const mongoose = require('mongoose');
 
 // Initialize Express app
 const app = express();
-
+app.use(express.json())
+const userRoute = require('./routes/usersRoute')
+app.use('/api/users/', userRoute)
 // Define server port
 const PORT = process.env.PORT || 5000;
 
