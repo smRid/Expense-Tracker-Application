@@ -1,33 +1,41 @@
-import React from 'react'
-import '../resources/default-layout.css'
-// DefaultLayout component defining the layout structure
+import React from "react";
+import { Menu, Dropdown, Button, Space } from "antd";
+import {useNavigate} from 'react-router-dom'
+
+import "../resources/default-layout.css";
 function DefaultLayout(props) {
+  const user = JSON.parse(localStorage.getItem("expense-tracker-user"));
+  const navigate = useNavigate()
+  const menu = (
+    <Menu
+      items={[
+        {
+          label: (
+            <li onClick={()=>{
+              localStorage.removeItem('expense-tracker-user')
+              navigate("/login");
+            }}>Logout</li>
+          ),
+        }
+      ]}
+    />
+  );
   return (
+    <div className="layout">
+      <div className="header d-flex justify-content-between align-items-center">
+        <div>
+          <h1 className="logo">Expense Tracker</h1>
+        </div>
+        <div>
+          <Dropdown overlay={menu} placement="bottomLeft">
+            <button className='primary'>{user.name}</button>
+          </Dropdown>
+        </div>
+      </div>
 
-    // This is the outermost container for the layout. It encapsulates the entire layout structure defined by the DefaultLayout 
-    <div className='layout'>
-
-          {/* Header section containing branding or navigation */}
-          <div className='header d-flex justify-content-between align-items-center'>
-
-                <div>
-                    <h1 className='logo'>Expense Tracker</h1>
-                </div>
-                
-                <div className="username">username</div>
-
-
-          </div>
-
-          {/* 
-            Main content area where dynamic content will be displayed.
-            Whatever is passed as children to DefaultLayout will be rendered here.
-          */}
-
-          <div className='content'>
-              {props.children}
-          </div>
+      <div className="content">{props.children}</div>
     </div>
-  )
+  );
 }
-export default DefaultLayout
+
+export default DefaultLayout;

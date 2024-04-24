@@ -1,0 +1,34 @@
+.filter{
+   box-shadow: 0 0 2px gray;
+   padding: 15px 20px;
+   border-radius: 5px;
+}
+
+.transaction-form{
+  color: rgba(0, 0, 0, 0.77) !important;
+}
+
+.Form.Item label{
+  text-decoration: black;
+}
+
+.transaction-form input{
+  border: 1px solid gray;
+  border-bottom: 1px solid gray;
+  box-shadow: none !important;
+}
+
+.transaction-form input:focus{
+  border: 1px solid gray;
+  border-bottom: 1px solid gray !important;
+  box-shadow: none !important;
+}
+
+.ant-select-selector{
+  border: 1px solid gray !important;
+}
+
+.ant-select-selector:focus{
+  box-shadow:none !important;
+  outline: none !important;
+}

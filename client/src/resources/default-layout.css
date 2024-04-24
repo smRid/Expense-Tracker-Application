@@ -29,6 +29,18 @@
     padding: 15px;
 }
 
+.spinner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.ant-spin-dot-item{
+    background-color: gray !important;
+}
+
+
 @media screen {
     .layout{
         margin: 0 15px;
