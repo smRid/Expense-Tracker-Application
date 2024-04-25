@@ -40,7 +40,7 @@ function Login() {
                         <hr />
                     
                         <Form.Item label='Email' name='email'>
-                            <Input />
+                            <Input type="email"/>
                         </Form.Item>
 
                         <Form.Item label='Password' name='password'>

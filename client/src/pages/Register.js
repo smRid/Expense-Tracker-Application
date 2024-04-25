@@ -43,11 +43,11 @@ function Register() {
                         <h1>Expense Tracker Application Register</h1>
                         <hr />
                         <Form.Item label='Name' name='name'>
-                            <Input />
+                            <Input type="text"/>
                         </Form.Item>
 
                         <Form.Item label='Email' name='email'>
-                            <Input />
+                            <Input type="email"/>
                         </Form.Item>
 
                         <Form.Item label='Password' name='password'>
