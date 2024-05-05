@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 // Connect to MongoDB database
-mongoose.connect('mongodb+srv://nafis:nafis@cluster0.ftkxzu3.mongodb.net/', {
+mongoose.connect('mongodb+srv://nafis:nafis@cluster0.ftkxzu3.mongodb.net/Expense-Tracker-System-By-CapTain_N', {
   useNewUrlParser: true, // Use the new URL parser
   useUnifiedTopology: true // Use the new server discovery and monitoring engine
 });

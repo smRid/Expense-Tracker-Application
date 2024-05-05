@@ -1,35 +1,36 @@
-import {Form, message} from 'antd'
+import { Form, message } from 'antd'
 import Input from 'antd/lib/input/Input'
-import React, { useEffect, useState } from "react";
-import {Link , useNavigate} from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from 'react'
 import '../resources/authentication.css'
 import axios from 'axios'
-import Spinner from "../components/Spinner";
+import Spinner from "../components/Spinner"
 
 function Register() {
-    const [loading, setLoading] = useState(false);
-    const navigate = useNavigate(true);
+    const [loading, setLoading] = useState(false)
     const onFinish = async (values) => {
         try {
-            setLoading(true)
-            await axios.post('/api/users/register', values)
-            message.success('Registration Successfull')
-            setLoading(false)
-        } catch (error) {
-            message.error('Something went wrong.')
-            setLoading(false)
-        }
-    };
+            setLoading(true) // Set loading state to true
 
+            await axios.post('/api/users/register', values)
+            message.success('Registration is successful')
+            setLoading(false) // Set loading state to false
+        } catch (error) {
+            message.error('Something went wrong')
+            setLoading(false) // Set loading state to false
+        }
+    }
+
+    const navigate = useNavigate(true)
     useEffect(()=>{
-        if(localStorage.getItem("expense-tracker-user")){
+        if(localStorage.getItem('Expense-Tracker-System-By-CapTain_N-user')){
             navigate("/")
         }
-    },[]);
+    }, []);
 
     return (
         <div className="register">
-            {loading && <Spinner/>}
+            {loading && <Spinner />}
             <div className="row justify-content-center align-items-center w-100 h-100">
 
                 <div className="col-md-5">
@@ -40,7 +41,7 @@ function Register() {
 
                 <div className="col-md-4">
                     <Form layout='vertical' onFinish={onFinish}>
-                        <h1>Expense Tracker Application Register</h1>
+                        <h1>Expense Tracker Register</h1>
                         <hr />
                         <Form.Item label='Name' name='name'>
                             <Input />
@@ -51,7 +52,7 @@ function Register() {
                         </Form.Item>
 
                         <Form.Item label='Password' name='password'>
-                            <Input type="password"/>
+                            <Input type="password" />
                         </Form.Item>
 
                         <div className="d-flex justify-content-between align-items-center">

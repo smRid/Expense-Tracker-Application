@@ -1,7 +1,9 @@
+// routes/userRoute.js
 const express = require('express')
 const User = require('../models/User')
 const router = express.Router()
 
+// Endpoint for user login
 router.post('/login', async function (req, res) {
     try {
         const result = await User.findOne({
@@ -19,6 +21,7 @@ router.post('/login', async function (req, res) {
 
 });
 
+// Endpoint for user registration
 router.post('/register', async function (req, res) {
     try {
         const newuser = new User(req.body);
@@ -30,5 +33,6 @@ router.post('/register', async function (req, res) {
 
 });
 
+// Export router for use in other files
 module.exports = router;
 
