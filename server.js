@@ -7,6 +7,7 @@ const dbConnect = require('./dbConnect'); // Import the database connection modu
 // Import userRoute for handling user-related API endpoints
 const userRoute = require('./routes/usersRoute')
 
+const transactionsRoute = require('./routes/transactionsRoute')
 
 // Initialize Express app
 const app = express();
@@ -15,6 +16,7 @@ app.use(express.json()); // Middleware to parse JSON requests
 
 // Use the userRoute for API endpoints related to users
 app.use('/api/users', userRoute);
+app.use('/api/transactions', transactionsRoute)
 
 
 // Define server port
