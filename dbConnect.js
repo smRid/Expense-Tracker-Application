@@ -7,7 +7,7 @@ mongoose.connect('mongodb+srv://nafis:nafis@cluster0.ftkxzu3.mongodb.net/Expense
   useUnifiedTopology: true // Use the new server discovery and monitoring engine
 });
 
-// Get the default connection object from Mongoose
+
 const connection = mongoose.connection;
 
 // Event listener for MongoDB connection error
