@@ -10,7 +10,7 @@ mongoose.connect('mongodb+srv://nafis:nafis@cluster0.ftkxzu3.mongodb.net/Expense
 // Get the default connection object from Mongoose
 const connection = mongoose.connection;
 
-// Event listener for MongoDB connection error
+
 connection.on('error', err => console.log(err));
 
 // Event listener for successful MongoDB connection
