@@ -15,7 +15,7 @@ function Login() {
             setLoading(true) // Set loading state to true
             const response = await axios.post('/api/users/login', values)
             localStorage.setItem('Expense-Tracker-System-By-CapTain_N-user', JSON.stringify({...response.data, password:''}))
-            setLoading(false) 
+            setLoading(false) // Set loading state to false
              
             message.success("Login successful")
             navigate("/")
