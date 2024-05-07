@@ -13,5 +13,5 @@ const connection = mongoose.connection;
 // Event listener for MongoDB connection error
 connection.on('error', err => console.log(err));
 
-
+// Event listener for successful MongoDB connection
 connection.on('connected', () => console.log('Mongo DB Connection Successful'));
